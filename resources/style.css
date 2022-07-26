@@ -74,7 +74,8 @@ section {
 
 .current-temp {
   font-size: 36px;
-  color: rgb(185, 180, 180);
+  color: white;
+  font-weight: 700;
 }
 
 .symbol {
@@ -115,22 +116,66 @@ section {
   border-radius: 5px;
   position: relative;
   bottom: -15px;
-  width: 100%;
+ width: 50vh;
+ 
 }
 
-.weekdays {
+div.weekdays {
+  position: relative;
+  bottom: 25px;
   font-size: 8px;
   color: #807bf0;
-  padding: 5px;
+  padding: 8px;
   text-align: center;
+  width:30px;
+  
 }
 
 .weekday-img {
-  width: 40px;
+  width: 35px;
 }
 
-@media screen {
-}
+/* #portfolio-link {
+  position: relative;
+  top: 200px;
+  right: 300px;
+  font-size: 10px;
+  text-align: center;
+  color: white;
+} */
+
+/* @media screen and (max-width: 900px) {
+  #week-temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    bottom: -15px;
+    /* width: 50%;
+    height: 400px; */
+   */
+
+  /* .weekdays {
+    font-size: 8px;
+    color: #807bf0;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .weekday-img {
+    width: 20px;
+  }
+} */
+/* #portfolio-link {
+  position: relative;
+  top: 200px;
+  right: 300px;
+  font-size: 10px;
+  text-align: center;
+  color: white;
+} */
+
 /* <a href='https://www.freepik.com/vectors/rainfall'>Rainfall vector created by starline - www.freepik.com</a> */
 
 /* <a href="https://www.flaticon.com/free-animated-icons/rain" title="rain animated icons">Rain animated icons created by Freepik - Flaticon</a> */
