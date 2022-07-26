@@ -13,22 +13,53 @@ body {
 }
 
 #container {
-  /* background: #ace7ef;
-  border: 6px solid #cefff1;
-  border-radius: 15px;
-  box-shadow: 10px 10px 40px rgba(24, 179, 230, 0.2); */
   width: 50vh;
   height: 70vh;
   background-color: rgb(185, 209, 255);
   border: 6px solid #d8e6ff;
   border-radius: 15px;
   box-shadow: 10px 10px 40px rgba(24, 179, 230, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-/*  radial-gradient(
-    circle at 10% 20%,
-    rgb(166, 226, 229) 0%,
-    rgb(198, 232, 221) 100.2%
-  ); */
+header {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  bottom: 120px;
+}
+
+input {
+  background: #d8e6ff;
+  border: 1px solid #d8e6ff;
+  border-radius: 5px;
+  font-size: 10px;
+  padding: 5px 35px 5px 5px;
+  box-shadow: 10px 10px 20px #807bf0;
+}
+
+button {
+  background: #807bf0;
+  border: 1px solid #807bf0;
+  border-radius: 5px;
+  font-size: 10px;
+  color: white;
+  margin-left: 5px;
+}
+
+section {
+  display: flex;
+  position: relative;
+  bottom: 100px;
+  right: 70px;
+}
+
+.current-temp {
+  font-size: 40px;
+  color: whitesmoke;
+}
 
 /* <a href='https://www.freepik.com/vectors/rainfall'>Rainfall vector created by starline - www.freepik.com</a> */
