@@ -9,16 +9,17 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
-  font-family: consolas;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 #container {
-  width: 50vh;
-  height: 70vh;
+  width: 40vh;
+  height: 60vh;
   background-color: rgb(185, 209, 255);
   border: 6px solid #d8e6ff;
   border-radius: 15px;
-  box-shadow: 10px 10px 40px rgba(24, 179, 230, 0.2);
+  box-shadow: 10px 10px 40px #807bf0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +30,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   position: relative;
-  bottom: 120px;
+  bottom: 80px;
 }
 
 input {
@@ -50,16 +51,72 @@ button {
   margin-left: 5px;
 }
 
+button:hover {
+  background: #d8e6ff;
+  border: 1px solid #d8e6ff;
+  cursor: pointer;
+  color: #807bf0;
+}
+
 section {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   position: relative;
-  bottom: 100px;
-  right: 70px;
+  bottom: 70px;
+}
+
+#current-temp-box {
+  padding-right: 40px;
 }
 
 .current-temp {
-  font-size: 40px;
+  font-size: 48px;
   color: whitesmoke;
 }
 
+.symbol {
+  font-size: 12px;
+  color: white;
+  position: relative;
+  bottom: 20px;
+}
+
+.symbol:hover {
+  color: #807bf0;
+  cursor: pointer;
+}
+
+.currenttemp-icon {
+  position: relative;
+  width: 60px;
+  bottom: -10px;
+}
+
+.city {
+  font-size: 10px;
+  color: white;
+  position: relative;
+  right: 50px;
+  text-align: center;
+}
+
+.name {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+#week-temp {
+  background-color: #807bf0;
+  position: relative;
+  top: 50px;
+}
+
+.weekdays {
+  font-size: 10px;
+  color: white;
+}
 /* <a href='https://www.freepik.com/vectors/rainfall'>Rainfall vector created by starline - www.freepik.com</a> */
+
+/* <a href="https://www.flaticon.com/free-animated-icons/rain" title="rain animated icons">Rain animated icons created by Freepik - Flaticon</a> */
