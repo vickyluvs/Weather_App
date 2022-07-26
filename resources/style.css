@@ -14,14 +14,13 @@ body {
 }
 
 #container {
-  width: 40vh;
-  height: 60vh;
-  background-color: rgb(185, 209, 255);
+  width: 60vh;
+  height: 40vh;
+  background-color: #ebf1ff;
   border: 6px solid #d8e6ff;
   border-radius: 15px;
   box-shadow: 10px 10px 40px #807bf0;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -30,14 +29,17 @@ header {
   display: flex;
   justify-content: space-evenly;
   position: relative;
-  bottom: 80px;
+  bottom: -10px;
+  right: 20px;
 }
 
 input {
   background: #d8e6ff;
   border: 1px solid #d8e6ff;
+  color: #807bf0;
   border-radius: 5px;
   font-size: 10px;
+  width: 40vh;
   padding: 5px 35px 5px 5px;
   box-shadow: 10px 10px 20px #807bf0;
 }
@@ -45,6 +47,7 @@ input {
 button {
   background: #807bf0;
   border: 1px solid #807bf0;
+  width: 10vh;
   border-radius: 5px;
   font-size: 10px;
   color: white;
@@ -61,45 +64,43 @@ button:hover {
 section {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
   position: relative;
-  bottom: 70px;
+  bottom: -20px;
 }
 
 #current-temp-box {
-  padding-right: 40px;
+  width: 35vh;
 }
 
 .current-temp {
-  font-size: 48px;
-  color: whitesmoke;
+  font-size: 36px;
+  color: rgb(185, 180, 180);
 }
 
 .symbol {
   font-size: 12px;
-  color: white;
+  color: #807bf0;
   position: relative;
   bottom: 20px;
 }
 
 .symbol:hover {
-  color: #807bf0;
+  color: white;
   cursor: pointer;
 }
 
 .currenttemp-icon {
   position: relative;
   width: 60px;
-  bottom: -10px;
+  right: 20px;
 }
 
 .city {
   font-size: 10px;
-  color: white;
+  color: #807bf0;
   position: relative;
-  right: 50px;
-  text-align: center;
+  right: 90px;
+  bottom: 20px;
 }
 
 .name {
@@ -108,14 +109,27 @@ section {
 }
 
 #week-temp {
-  background-color: #807bf0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
   position: relative;
-  top: 50px;
+  bottom: -15px;
+  width: 100%;
 }
 
 .weekdays {
-  font-size: 10px;
-  color: white;
+  font-size: 8px;
+  color: #807bf0;
+  padding: 5px;
+  text-align: center;
+}
+
+.weekday-img {
+  width: 40px;
+}
+
+@media screen {
 }
 /* <a href='https://www.freepik.com/vectors/rainfall'>Rainfall vector created by starline - www.freepik.com</a> */
 
