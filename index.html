@@ -8,22 +8,29 @@
   
     <!-- Style link -->
     <link href="./resources/style.css " rel="stylesheet" />
+    <!-- Axios library CDN link -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <main id="container">
       <header>
+        <form id="search-form">
         <label for="searchbar"></label>
         <input
-          type="search"
-          id="searchbar"
+          type="text"
+          id="search-text"
           placeholder="Enter a city name..."
+          autocomplete="off"
+          autofocus="on"
         />
 
-        <button id="button">Search</button>
+        <button id="button" type="submit" value="search">Search</button>
+        </form>
+      
       </header>
       <section >
         <div id="current-temp-box">
-          <span class="current-temp">80</span>
+          <span class="current-temp" id="current-temp">80</span>
           <span class="symbol">&#8451</span>
           <span class="symbol">&#8739</span>
           <span class="symbol">&#8457</span>
@@ -35,9 +42,9 @@
       </section>
       <section>
          <div>
-          <span class="city name">Freetown</span><br>
-          <span class="city">Tuesday 7:00 PM</span><br>
-          <span class="city">Rainy</span>
+          <span class="city city-name">Freetown</span><br>
+          <!-- <span class="city" id="day">Tuesday</span> <span class="city" id="time">7:00 PM</span><br> -->
+          <span class="city" id="weather-description">Rainy</span>
          </div>
       </section>
 
@@ -45,7 +52,7 @@
         <div class="weekdays" >
           <p>Monday</p>
           <img class="weekday-img" src="./resources/images/cloud.png"><br>
-          <span>80&#8457</span>
+          <span id="current-temp">80&#8457</span>
         </div>
 
         <div class="weekdays" >
@@ -79,7 +86,7 @@
         </div>
 
         <div class="weekdays" >
-           <p>Monday</p>
+           <p>Sunday</p>
           <img src="./resources/images/raining.png" class="weekday-img" ><br>
           <span>80&#8457</span>
         </div>

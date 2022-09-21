@@ -15,7 +15,7 @@ body {
 
 #container {
   width: 60vh;
-  height: 40vh;
+  height: 45vh;
   background-color: #ebf1ff;
   border: 6px solid #d8e6ff;
   border-radius: 15px;
@@ -39,7 +39,7 @@ input {
   color: #807bf0;
   border-radius: 5px;
   font-size: 10px;
-  width: 40vh;
+  width: 30vh;
   padding: 5px 35px 5px 5px;
   box-shadow: 10px 10px 20px #807bf0;
 }
@@ -60,7 +60,10 @@ button:hover {
   cursor: pointer;
   color: #807bf0;
 }
-
+h2 {
+  color: #807bf0;
+  font-size: 12px;
+}
 section {
   display: flex;
   flex-direction: row;
@@ -104,7 +107,7 @@ section {
   bottom: 20px;
 }
 
-.name {
+.city-name {
   font-size: 18px;
   letter-spacing: 2px;
 }
@@ -116,7 +119,7 @@ section {
   border-radius: 5px;
   position: relative;
   bottom: -15px;
-  width: 50vh;
+  width: 60vh;
 }
 
 div.weekdays {
@@ -127,10 +130,11 @@ div.weekdays {
   padding: 8px;
   text-align: center;
   width: 30px;
+  height: 50vh;
 }
 
 .weekday-img {
-  width: 30px;
+  width: 20px;
 }
 
 /* #portfolio-link {
